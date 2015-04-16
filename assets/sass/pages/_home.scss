@@ -1,4 +1,38 @@
 // Styles for Home Page
 .home-page {
+    background: $white;
+    padding: 40px;
 
+    .piece {
+        width: 100%;
+        margin: 20px 0;
+
+        .picture {
+            margin: 0 auto;
+            width: 50%;
+
+            img {
+                width: 100%;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+
+            &.large {
+                width: 100%;
+
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .name {
+            @include font-text();
+            color: $blue;
+            text-align: center;
+        }
+    }
 }

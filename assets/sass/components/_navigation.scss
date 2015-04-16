@@ -1,0 +1,33 @@
+.navbar {
+    @include clearfix();
+    background: $white;
+    height: 60px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+
+    .logo {
+        float: left;
+        height: 40px;
+        margin-top: 10px;
+        padding-right: 20px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .links {
+        @include clearfix();
+        float: left;
+        .link {
+            float: left;
+            line-height: 60px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

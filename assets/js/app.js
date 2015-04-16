@@ -25,7 +25,7 @@ app.run(['$rootScope',
             if (toState.data && toState.data.pageTitle) {
                 $rootScope.pageTitle = toState.data.pageTitle;
             } else {
-                $rootScope.pageTitle = 'Default Title';
+                $rootScope.pageTitle = 'Innovative Design';
             }
 
             // Add functionality for successful state/page change here
@@ -50,7 +50,28 @@ app.config(['$stateProvider',
                 url: '/',
                 templateUrl: './views/home.html',
                 data: {
-                    pageTitle: 'Home Page'
+                    pageTitle: 'Innovative Design'
+                }
+            })
+            .state('about', {
+                url: '/about',
+                templateUrl: './views/about.html',
+                data: {
+                    pageTitle: 'InnoD - About'
+                }
+            })
+            .state('projects', {
+                url: '/projects',
+                templateUrl: './views/projects.html',
+                data: {
+                    pageTitle: 'InnoD - Projects'
+                }
+            })
+            .state('contact', {
+                url: '/contact',
+                templateUrl: './views/contact.html',
+                data: {
+                    pageTitle: 'InnoD - Contact'
                 }
             });
     }
